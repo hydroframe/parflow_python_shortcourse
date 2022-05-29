@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+exercises/little_washita/outputs/
+
+exercises/little_washita/LW_CLM_EX4.out.txt
+
+*.pfidb
