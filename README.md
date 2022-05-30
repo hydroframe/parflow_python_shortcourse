@@ -2,26 +2,33 @@
 This short course provides an introduction to ParFlow. All of the exercises provided here use the python interface for ParFlow. If you prefer to work through the tcl interface you can refer to these [basic](https://github.com/hydroframe/ParFlow_Short_Course) and [advanced](https://github.com/hydroframe/ParFlow_Advanced_ShortCourse) short course repos. 
 
 ## Table of Contents <!-- omit in toc -->
-- [Additional Resources](#additional-resources)
-- [How to use this repo](#how-to-use-this-repo)
+- [ParFlow Examples Contained in this repo](#parflow-examples-contained-in-this-repo)
+- [Additional Training Resources](#additional-training-resources)
 - [Setting up your run enviroment (@Reed don't love this title)](#setting-up-your-run-enviroment-reed-dont-love-this-title)
   - [**1. Quick start**](#1-quick-start)
   - [**2. Other options for running parflow**](#2-other-options-for-running-parflow)
     - [**ParFlow Docker**](#parflow-docker)
     - [**Local ParFlow build**](#local-parflow-build)
   - [**3. Python packages for ParFlow**](#3-python-packages-for-parflow)
+
+## ParFlow Examples Contained in this repo
+
+1. **Little Washita ParFlow Simulations**: These exercises walk through a variety of simulation configurations for the Little Washita watershed. All script are setup just to build and run the Parflow simulation. Refer to the pre and post processing list for examples of creating inputs and evaluating outputs. 
+     - [LittleWashita_ParFlowCLM_AnnotatedExample.ipynb](https://github.com/hydroframe/parflow_python_shortcourse/blob/main/exercises/little_washita/LittleWashita_ParFlowCLM_AnnotatedExample%20copy.ipynb): This is the most fully documented script. It illustrates the complete setup for a watershed simulation running with ParFlow-CLM
+     - [LittleWashita_Parkinglot.ipynb](https://github.com/hydroframe/parflow_python_shortcourse/blob/main/exercises/little_washita/LittleWashita_Parkinglot.ipynb): A simplified test case without CLM where we evaluate drainage networks by making the subsurface impermable and applying a simple rain pulse to the domain.
+     - [LittleWashita_Spinup.ipynb](https://github.com/hydroframe/parflow_python_shortcourse/blob/main/exercises/little_washita/LittleWashita_Spinup.ipynb): An illustration of how to 'spinup' your model to achieve a steady state groundwater configuration. 
+     - [LittleWashita_TableInput.ipynb](https://github.com/hydroframe/parflow_python_shortcourse/blob/main/exercises/little_washita/LittleWashita_TableInput.ipynb): An alternate verson of the main CLM example illustrating how you can set subsurface properties with a csv table rather than within python. 
   
-## Additional Resources
+2. **Little Washita Pre and Post Processing Examples**: 
+
+## Additional Training Resources
 In addition to this short course there are multiple other ways to learn more about ParFlow and connect with the community we encourage you to check out these resources. 
 - [ParFlow Website](https://parflow.org/): General information about the code and updates
 - [Parflow Blog](http://parflow.blogspot.com/): Tips on workflows and common issues
 - [Parflow GitHub Repo](https://github.com/parflow/parflow): Where all of the code lives and development happens 
 - [ParFlow user Group](): **NEED link to this**
-- [ParFlow Read the Docs](): **NEED link to this**
-- [ParFlow manual](https://github.com/parflow/parflow/blob/master/parflow-manual.pdf): This is the main pdf of the manual documenting all the keys. 
-
-## How to use this repo
-**To Do at end**: List out the exercises and whats included
+- [ParFlow Read the Docs](https://parflow-docs.readthedocs.io/en/latest/intro.html): Complete documentation of all ParFlow keys and options. 
+- [ParFlow manual pdf](https://github.com/parflow/parflow/blob/master/parflow-manual.pdf): PDF version of the manual. 
 
 ## Setting up your run enviroment (@Reed don't love this title)
 If you are working with ParFlow through the python interface you will need two things (1) the actual ParFlow model, you can build this locally or run it through a Docker and (2) the python tools for interacting with ParFlow. 
