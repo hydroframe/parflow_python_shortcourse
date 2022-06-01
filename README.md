@@ -4,7 +4,7 @@ This short course provides an introduction to ParFlow. All of the exercises prov
 ## Table of Contents <!-- omit in toc -->
 - [ParFlow Examples Contained in this repo](#parflow-examples-contained-in-this-repo)
 - [Additional Training Resources](#additional-training-resources)
-- [Setting up your run enviroment (@Reed don't love this title)](#setting-up-your-run-enviroment-reed-dont-love-this-title)
+- [Setting up your run enviroment](#setting-up-your-run-enviroment)
   - [**1. Quick start**](#1-quick-start)
   - [**2. Other options for running parflow**](#2-other-options-for-running-parflow)
     - [**ParFlow Docker**](#parflow-docker)
@@ -30,7 +30,7 @@ In addition to this short course there are multiple other ways to learn more abo
 - [ParFlow Read the Docs](https://parflow-docs.readthedocs.io/en/latest/intro.html): Complete documentation of all ParFlow keys and options. 
 - [ParFlow manual pdf](https://github.com/parflow/parflow/blob/master/parflow-manual.pdf): PDF version of the manual. 
 
-## Setting up your run enviroment (@Reed don't love this title)
+## Setting up your run enviroment
 If you are working with ParFlow through the python interface you will need two things (1) the actual ParFlow model, you can build this locally or run it through a Docker and (2) the python tools for interacting with ParFlow. 
 
 The easiest way to work through the materials of this short course is to follow the quick start instructions which point you to a Docker which includes ParFlow along with all the python packages you will need.  
