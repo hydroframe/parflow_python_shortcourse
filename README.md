@@ -50,11 +50,15 @@ The quickest way to jump in and work through these exercises is to start from ou
    
 3. When you launch the Docker it will just have access to the directory you launch it from and every directory below it. So the first step is to open a terminal windo and navigate to the directory that you cloned the short course into
    
-4. Next run the following command from your terminal: 
+4. Next run the following command from your terminal on mac / linux: 
    ```
    docker run --rm -it -p 8888:8888 -v $(pwd):/data reedmaxwell/parflowjupyter
    ```
-   This will launch a notebook server with access to the directory you are in and every one below it.  
+   and run this command on Windows:
+   ```
+   docker run --rm -it -p 8888:8888 -v %cd%:/data reedmaxwell/parflowjupyter
+   ```
+This will launch a notebook server with access to the directory you are in and every one below it.  If you get a 404 error or file not found you might have [this issue](https://github.com/darribas/gds_env/issues/8).
 
 5.  After you run the previous command you should see outputs that look like this:
     ```
