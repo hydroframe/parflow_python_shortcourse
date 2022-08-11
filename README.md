@@ -28,7 +28,6 @@ In addition to this short course there are multiple other ways to learn more abo
 - [Parflow GitHub Repo](https://github.com/parflow/parflow): Where all of the code lives and development happens 
 - [ParFlow user Group](https://groups.google.com/u/1/g/parflow): **NEED link to this**
 - [ParFlow Read the Docs](https://parflow.readthedocs.io/en/latest/index.html): Complete documentation of all ParFlow keys and options. 
-- [ParFlow manual pdf](https://github.com/parflow/parflow/blob/master/parflow-manual.pdf): now older, PDF version of the manual. 
 
 ## Setting up your run enviroment
 If you are working with ParFlow through the python interface you will need two things (1) the actual ParFlow model, you can build this locally or run it through a Docker and (2) the python tools for interacting with ParFlow. 
