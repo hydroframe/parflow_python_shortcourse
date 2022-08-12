@@ -375,9 +375,9 @@ recflux[29,:,:]=(-rec_flux/wbx.ComputationalGrid.DZ)
 dir_name = get_absolute_path('wbx_flux')
 mkdir(dir_name)
 
-for i in range(nt+1):
+for i in range(nt):
   fluxfilename = 'wbx_flux/Forcing.%05d.pfb' % i
-  if (i<=wbx.Cycle.rainrec.r0.Length):
+  if (i<wbx.Cycle.rainrec.r0.Length):
     write_pfb(get_absolute_path(fluxfilename), rainflux, dist=True)
   else:
     write_pfb(get_absolute_path(fluxfilename), recflux, dist=True)
